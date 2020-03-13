@@ -1,0 +1,12 @@
+a = -0.2;
+b = -9.8;
+t=0:0.01:5;
+saida =[];
+for p=32:1:64
+    saida=[saida; edo_linear(p, t, a, b)];
+end
+
+plot(t,saida);
+grid on;
+xlabel('Tempo (s)')
+ylabel('Velocidade')

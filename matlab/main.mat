@@ -1,0 +1,9 @@
+a = -0.2;
+b = -9.8;
+t=0:0.01:5;
+cor=['b','r','m','c','g','k'];
+saida =[];
+for p=32:1:64
+    plot(t,edo_linear(p, t, a, b),cor(mod(p, 6)+1));
+    hold on;
+end

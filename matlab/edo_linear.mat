@@ -1,0 +1,4 @@
+function resp = edo_linear( p0, t, a, b )
+    c = p0.-b/a;
+    resp = b/a + c.*exp(a.*t);
+end
